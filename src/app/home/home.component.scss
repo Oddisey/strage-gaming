@@ -1,0 +1,13 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image: url("/assets/images/strage_logo_monochormatic_and_purple_darkened_80.png");
+    background-size: 743px 739px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    section {
+        background: white;
+    }
+}

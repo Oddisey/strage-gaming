@@ -1,0 +1,64 @@
+/* @import '/src/assets/scss/variables'; */
+
+.header {
+    font-family: 'Roboto';
+    background-color: #464646;
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .logo-text {
+        height: 50px;
+        width: 177px;
+    }
+
+    a {
+        line-height: 3;
+        text-decoration: none;
+        color: #dedede;
+    }
+    a:hover {
+        color: #32F761;
+    }
+
+    .br {
+        border-right: #dedede 1px solid;
+    }
+
+    .accent-bar {
+        height: 2px;
+        background-color: #32F761;
+    }
+}
+
+.news-reels {
+    position: relative;
+    height: 40px;
+    background-color: #727272;
+
+    .reel-title {
+        height: 40px;
+        background-color: #1EB1E2;
+        padding: 10px 5px 0 49px
+    }
+
+    .reel-title::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        margin-top: 30px;
+        box-sizing: border-box;
+        
+        border: 14px solid black;
+        border-color: transparent transparent #1EB1E2 #1EB1E2;
+        
+        transform-origin: 0 0;
+        transform: rotate(225deg);
+        
+        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
+    }
+}

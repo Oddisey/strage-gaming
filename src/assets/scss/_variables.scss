@@ -1,0 +1,34 @@
+@import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Thin;
+    src: url(../fonts/roboto/Roboto-Thin.ttf);
+}
+
+$spacer: 5px;
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5)
+  ),
+  $spacers
+);
+
+$s_green:    #32F761;
+$s_dark_purple:    #8902AF;
+$s_light_purple:    #c145ff;
