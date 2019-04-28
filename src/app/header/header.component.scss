@@ -1,6 +1,6 @@
-/* @import '/src/assets/scss/variables'; */
+@import 'variables';
 
-.header {
+.nav-bar {
     font-family: 'Roboto';
     background-color: #464646;
 
@@ -20,7 +20,7 @@
         color: #dedede;
     }
     a:hover {
-        color: #32F761;
+        color: $s_green;
     }
 
     .br {
@@ -29,7 +29,7 @@
 
     .accent-bar {
         height: 2px;
-        background-color: #32F761;
+        background-color: $s_green;
     }
 }
 
@@ -39,9 +39,11 @@
     background-color: #727272;
 
     .reel-title {
-        height: 40px;
         background-color: #1EB1E2;
-        padding: 10px 5px 0 49px
+        padding: 11px 11px 10px 80px;
+        color: $blackish;
+        font-family: 'Roboto-Bold';
+        font-size: 13px;
     }
 
     .reel-title::after {
@@ -49,8 +51,8 @@
         position: absolute;
         width: 0;
         height: 0;
-        margin-left: 5px;
-        margin-top: 30px;
+        margin-left: 11px;
+        margin-top: 29px;
         box-sizing: border-box;
         
         border: 14px solid black;

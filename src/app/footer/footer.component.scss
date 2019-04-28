@@ -1,14 +1,19 @@
-:host {
-    height: 40px;
-    background-color: lightblue;
+@import 'variables';
 
-    .green-stripe {
-        height: 3px;
-        background-color: #32F761;
+.green-stripe {
+    height: 3px;
+    background-color: $s_green;
+}
+
+.main-footer {
+    background-color: #707070;
+    font-size: 12px;
+
+    .icons {
+        font-size: 15px;
     }
 
-    .main-footer {
-        height: 37px;
-        background-color: #707070;
+    .icons:hover {
+        cursor: pointer;
     }
 }

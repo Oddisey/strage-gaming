@@ -1,20 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
 
-@font-face {
-    font-family: Roboto;
-    src: url(../fonts/roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(../fonts/roboto/Roboto-Bold.ttf);
-}
-
-@font-face {
-    font-family: Roboto-Thin;
-    src: url(../fonts/roboto/Roboto-Thin.ttf);
-}
-
 $spacer: 5px;
 
 $spacers: map-merge(
@@ -29,6 +14,8 @@ $spacers: map-merge(
   $spacers
 );
 
-$s_green:    #32F761;
-$s_dark_purple:    #8902AF;
-$s_light_purple:    #c145ff;
+$s_green:         #32F761;
+$s_dark_purple:   #8902AF;
+$s_light_purple:  #c145ff;
+$blackish:        #404040;
+$off_white:       #dedede;
