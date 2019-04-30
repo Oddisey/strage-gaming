@@ -28,22 +28,21 @@
         }
 
         &-left {
-            background-color: #4964FD;
+            background-color: #293a98;
     
             &::after {
                 border-width: 200px 0 0 100px;
-                border-color: transparent transparent transparent #4964FD;
+                border-color: transparent transparent transparent #293a98;
                 right: -100px;
             }
-    
         }
 
         &-right {
-            background-color: #E24638;
+            background-color: #90352d;
     
             &::after {
                 border-width: 0 100px 200px 0;
-                border-color: transparent #E24638 transparent transparent;
+                border-color: transparent #90352d transparent transparent;
                 left: -100px;
             }
     

@@ -32,35 +32,3 @@
         background-color: $s_green;
     }
 }
-
-.news-reels {
-    position: relative;
-    height: 40px;
-    background-color: #727272;
-
-    .reel-title {
-        background-color: #1EB1E2;
-        padding: 11px 11px 10px 80px;
-        color: $blackish;
-        font-family: 'Roboto-Bold';
-        font-size: 13px;
-    }
-
-    .reel-title::after {
-        content: "";
-        position: absolute;
-        width: 0;
-        height: 0;
-        margin-left: 11px;
-        margin-top: 29px;
-        box-sizing: border-box;
-        
-        border: 14px solid black;
-        border-color: transparent transparent #1EB1E2 #1EB1E2;
-        
-        transform-origin: 0 0;
-        transform: rotate(225deg);
-        
-        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
-    }
-}

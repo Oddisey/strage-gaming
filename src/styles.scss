@@ -62,3 +62,13 @@ app-root {
         font-family: 'Montserrat-SemiBold';
     }
 }
+
+.btn.primary {
+    background-color: #E3E3E3 !important;
+    border: #8902AF 2px solid !important;
+    font-size: 12px !important;
+
+    &.borderless {
+        border: none !important;
+    }
+}

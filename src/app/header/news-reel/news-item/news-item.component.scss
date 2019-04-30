@@ -1,0 +1,30 @@
+.watch {
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 13px;
+    cursor: pointer;
+
+    &-0 {
+        background: #F09D3C;
+    }
+
+    &-1 {
+        background: #D247EB;
+    }
+
+    &-2 {
+        background: #EB4747;
+    }
+
+    &-3 {
+        background: #47B2EB;
+    }
+
+    &-4 {
+        background: #475ee0;
+    }
+}
+
+.text {
+    font-size: 13px;
+}
