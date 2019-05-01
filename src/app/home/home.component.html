@@ -1,27 +1,30 @@
 <main class="container d-flex flex-column p-6">
-    <article class="row">
-        <section class="col-6">
-            <div class="featured">
-                <div class="header">
-                    FEATURED
-                </div>
-                <div class="pt-3">
+    <article>
+        <div class="header">
+            FEATURED
+        </div>
+        <section class="row pt-4">
+            <div class="col-6">
+                <div class="featured">
                     This week on the latest episode of Happy Hour, Mark spills the
                     beans on how he made his first billion. What else is there to hear 
                     about on this whacky zany podcast? You’ll just have to tune in 
                     here and watch!
                 </div>
             </div>
-        </section>
-        <section class="col-6">
-            <img class="w-100" src="/assets/images/mark_banner.png" alt="">
+            <div class="col-6">
+                <img class="w-100" src="/assets/images/mark_banner.png" alt="">
+            </div>
         </section>
     </article>
     <article>
-        <section class="row pt-8">
+        <section class="row header">
+            CHECK THESE OUT
+        </section>
+        <section class="row pt-4">
             <div class="keynote keynote-left d-flex flex-column justify-content-between col-4 pl-5 py-5">
                 <div>
-                    <div class="header">
+                    <div class="header-thin">
                         OUTTAKES
                     </div>
                     <div class="desc">
@@ -42,7 +45,7 @@
             </div>
             <div class="keynote keynote-right d-flex flex-column justify-content-between col-4 py-5">
                 <div>
-                    <div class="header">
+                    <div class="header-thin">
                         BEST OF
                     </div>
                     <div class="desc">
@@ -62,32 +65,48 @@
         <section class="photos">
             <div class="row pt-4">
                 <div class="photo col-4">
-                    <div class="dylan"></div>
+                    <div class="dylan d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('dylan')">View</button>
+                    </div>
                 </div>
                 <div class="photo col-4">
-                    <div class="krystal"></div>
+                    <div class="krystal d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('krystal')">View</button>
+                    </div>
                 </div>
                 <div class="photo col-4">
-                    <div class="brent"></div>
-                </div>
-            </div>
-            <div class="row pt-6">
-                <div class="photo col-4">
-                    <div class="mark"></div>
-                </div>
-                <div class="photo col-4">
-                    <div class="john"></div>
-                </div>
-                <div class="photo col-4">
-                    <div class="kepley"></div>
+                    <div class="brent d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('brent')">View</button>
+                    </div>
                 </div>
             </div>
             <div class="row pt-6">
                 <div class="photo col-4">
-                    <div class="xphobia"></div>
+                    <div class="mark d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('mark')">View</button>
+                    </div>
                 </div>
                 <div class="photo col-4">
-                    <div class="sean"></div>
+                    <div class="john d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('john')">View</button>
+                    </div>
+                </div>
+                <div class="photo col-4">
+                    <div class="kepley d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('kepley')">View</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-6">
+                <div class="photo col-4">
+                    <div class="xphobia d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('xphobia')">View</button>
+                    </div>
+                </div>
+                <div class="photo col-4">
+                    <div class="sean d-flex justify-content-center align-items-center">
+                        <button class="btn primary d-none px-8" (click)="bio('sean')">View</button>
+                    </div>
                 </div>
             </div>
         </section>

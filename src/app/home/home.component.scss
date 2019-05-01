@@ -9,14 +9,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    color: $off_white;
 
-    .featured {
-        color: $off_white
+    article + article {
+        margin-top: 50px;
     }
 
     .keynote {
         z-index: 2;
-        color: $off_white;
 
         &::after {
             position: absolute;
@@ -57,10 +57,6 @@
         max-height: 200px;
     }
 
-    .photos-title {
-        color: $off_white;
-    }
-
     .photos {
         .row {
             height: 14rem;
@@ -98,6 +94,10 @@
             }
         }
 
+        div:hover button {
+            display: block !important;
+        }
+
         div:hover::before {
             left: 15px;
         }
@@ -120,7 +120,6 @@
         &::before { content: "Dylan"; }
         &::after { content: "@DylanSinnott"; }
     }
-    /* .dylan {background: rgba(255, 0, 0, 0.25), url("/assets/images/profile-pics/dylan.jpg")} */
     .krystal {
         background-image: url("/assets/images/profile-pics/krystal.jpg");
 

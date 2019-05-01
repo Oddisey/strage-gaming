@@ -1,0 +1,23 @@
+@import 'variables';
+
+:host {
+    height: 520px;
+    background-color: $off_white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+
+    .pic img {
+       height: 200px;
+       width: 200px; 
+    }
+
+    .name {
+        font-size: 22px;
+
+        a {
+            cursor: pointer;
+            font-size: 20px;
+        }
+    }
+}
