@@ -5,6 +5,14 @@
     height: 40px;
     background-color: #727272;
     display: flex;
+    overflow: hidden;
+
+    &:hover .news-items {
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+    }
 
     .reel-title {
         background-color: #1EB1E2;
@@ -12,6 +20,7 @@
         color: $blackish;
         font-family: 'Roboto-Bold';
         font-size: 13px;
+        z-index: 2;
     }
 
     .reel-title::after {
@@ -22,13 +31,40 @@
         margin-left: 11px;
         margin-top: 29px;
         box-sizing: border-box;
-        
+        z-index: 2;
         border: 14px solid black;
         border-color: transparent transparent #1EB1E2 #1EB1E2;
-        
         transform-origin: 0 0;
         transform: rotate(225deg);
-        
         box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
     }
+
+    .news-items {
+        white-space: nowrap;
+        position: absolute;
+        display: none;
+        animation: marquee 30s linear infinite;
+    }
+
+    .reel-start-cover {
+        height: 100%;
+        width: 181px;
+        right: 0;
+        background-color: #1EB1E2;
+        box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    @keyframes marquee {
+        0% {
+            display: flex;
+            left: 100%;
+            transform: translateX(0%);
+        }
+        100% {
+            display: flex;
+            left: -100%;
+            transform: translateX(-50%);
+        }
+    }
+    
 }

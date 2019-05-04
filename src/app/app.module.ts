@@ -13,6 +13,7 @@ import { NewsReelComponent } from "./header/news-reel/news-reel.component";
 import { NewsItemComponent } from "./header/news-reel/news-item/news-item.component";
 import { BioModalComponent } from './home/bio-modal/bio-modal.component';
 import { BioWidgetComponent } from './home/bio-widget/bio-widget.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,8 @@ import { BioWidgetComponent } from './home/bio-widget/bio-widget.component';
         BrowserModule,
         AppRoutingModule,
         AngularFontAwesomeModule,
-        NgbModule.forRoot()
+        NgbModule.forRoot(),
+        BrowserAnimationsModule
     ],
     providers: [],
     bootstrap: [AppComponent],

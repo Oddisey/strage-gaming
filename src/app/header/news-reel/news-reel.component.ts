@@ -1,17 +1,34 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angular/core";
+
 
 @Component({
     selector: "news-reel",
     templateUrl: "./news-reel.component.html",
-    styleUrls: ["./news-reel.component.scss"]
+    styleUrls: ["./news-reel.component.scss"],
 })
-export class NewsReelComponent implements OnInit {
+export class NewsReelComponent implements AfterViewInit {
 
-    titles: string[] = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5"];
+    @ViewChild("reelContainer") reelContainerRef: ElementRef;
+    @ViewChild("reel") reelRef: ElementRef;
+    leftWithOffset = "";
+    animationWithOffset = "";
+    reelContainerWidth = 0;
+    reelWidth = 0;
+    reelWidthRatio = 1;
+
+    titles: string[] = ["Brent says game things", 
+        "Oddisey makes a dope play", 
+        "Dylan talks hustle",
+        "Surprise! Xphobia is gunna stream again"
+    ];
 
     constructor() { }
 
-    ngOnInit() {
+    ngAfterViewInit() {
+        this.reelContainerWidth = this.reelContainerRef.nativeElement.offsetWidth;
+        this.reelWidth = this.reelRef.nativeElement.offsetWidth;
+        this.reelWidthRatio = this.reelWidth / this.reelContainerWidth;
+        this.animationWithOffset = `marqueefar ${60 * this.reelWidthRatio}s linear infinite`;
     }
 
 }
