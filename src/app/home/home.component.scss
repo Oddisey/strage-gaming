@@ -15,6 +15,21 @@
         margin-top: 50px;
     }
 
+    .featured {
+        overflow: hidden;
+
+        button, .overlay {
+            z-index: 2;
+        }
+
+        button {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+        }
+    }
+
     .keynote {
         z-index: 2;
 
@@ -63,6 +78,10 @@
         button {
             display: none;
         }
+    }
+
+    .img-container.featured {
+        max-height: 350px;
     }
 
     .img-container:hover {

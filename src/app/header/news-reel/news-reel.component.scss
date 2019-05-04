@@ -7,7 +7,7 @@
     display: flex;
     overflow: hidden;
 
-    &:hover .news-items {
+    .reel-container:hover .news-items {
         -webkit-animation-play-state: paused;
         -moz-animation-play-state: paused;
         -o-animation-play-state: paused;
@@ -43,7 +43,7 @@
         white-space: nowrap;
         position: absolute;
         display: none;
-        animation: marquee 30s linear infinite;
+        animation: marquee 20s linear infinite;
     }
 
     .reel-start-cover {
@@ -58,12 +58,11 @@
         0% {
             display: flex;
             left: 100%;
-            transform: translateX(0%);
         }
         100% {
             display: flex;
-            left: -100%;
-            transform: translateX(-50%);
+            left: 0%;
+            transform: translateX(-100%);
         }
     }
     

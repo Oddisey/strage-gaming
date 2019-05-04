@@ -71,4 +71,8 @@ app-root {
     &.borderless {
         border: none !important;
     }
+
+    &.overlay-btn {
+        background-color: #e3e3e399 !important;
+    }
 }
