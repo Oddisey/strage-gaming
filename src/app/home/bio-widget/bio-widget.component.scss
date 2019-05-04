@@ -1,0 +1,71 @@
+@import 'variables';
+
+:host {
+    overflow: hidden;
+    height: 100%;
+
+    .name {
+        transition: all .3s;
+        width: calc(50% - 15px);
+        background-color: $s_dark_purple;
+        position: absolute;
+        top: 0;
+        left: -170px;
+        padding: 5px 0;
+        text-align: center;
+        z-index: 2;
+        height: auto;
+    }
+
+    .handle {
+        transition: all .3s;
+        width: calc(50% - 15px);
+        background-color: $s_dark_purple;
+        position: absolute;
+        bottom: 0;
+        right: -170px;
+        padding: 5px 0;
+        text-align: center;
+        z-index: 2;
+        height: auto;
+    }
+
+    div {
+        background-size: cover;
+        overflow: hidden;
+        height: 100%;
+
+        img {
+            transition: all .3s;
+            width: 100%;
+        }
+    }
+
+    div:hover {
+
+        img {
+            transform: scale(1.2);
+        }
+
+        button {
+            position: absolute;
+            display: block !important;
+            width: 50%;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 103%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);        
+        }
+    }
+
+    &:hover .name {
+        left: 15px;
+    }
+
+    &:hover .handle {
+        right: 15px;
+    }
+}

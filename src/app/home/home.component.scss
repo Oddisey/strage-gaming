@@ -55,6 +55,33 @@
 
     .img-container {
         max-height: 200px;
+
+        img {
+            transition: all .3s;
+        }
+
+        button {
+            display: none;
+        }
+    }
+
+    .img-container:hover {
+        img {
+            transform: scale(1.1);
+        }
+
+        button {
+            position: absolute;
+            display: block;
+            width: 50%;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 103%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);        
+        }
     }
 
     .photos {
@@ -62,154 +89,4 @@
             height: 14rem;
         }
     }
-
-    .photo {
-        overflow: hidden;
-
-        div {
-            background-size: cover;
-            overflow: hidden;
-            height: 100%;
-
-            &::before {
-                transition: all .25s;
-                width: calc(50% - 15px);
-                background-color: $s_dark_purple;
-                position: absolute;
-                top: 0;
-                left: -170px;
-                padding: 5px 0;
-                text-align: center;
-            }
-
-            &::after {
-                transition: all .25s;
-                width: calc(50% - 15px);
-                background-color: $s_dark_purple;
-                position: absolute;
-                bottom: 0;
-                right: -170px;
-                padding: 5px 0;
-                text-align: center;
-            }
-        }
-
-        div:hover button {
-            display: block !important;
-        }
-
-        div:hover::before {
-            left: 15px;
-        }
-
-        div:hover::after {
-            right: 15px;
-        }
-    }
-
-    .dylan {
-        background: url("/assets/images/profile-pics/dylan.jpg");
-
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/dylan.jpg")
-
-        }
-
-        &::before { content: "Dylan"; }
-        &::after { content: "@DylanSinnott"; }
-    }
-    .krystal {
-        background-image: url("/assets/images/profile-pics/krystal.jpg");
-
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/krystal.jpg")
-
-        }
-
-        &::before { content: "Krystal"; }
-        &::after { content: "@iAmQueenKrystal"; font-size: 13px; }
-    }
-    .brent {
-        background-image: url("/assets/images/profile-pics/brent.jpg");
-        
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/brent.jpg")
-
-        }
-
-        &::before { content: "Brent"; }
-        &::after { content: "@Jesterhead0302"; font-size: 13px; }
-    }
-    .mark {
-        background-image: url("/assets/images/profile-pics/mark.jpg");
-        
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/mark.jpg")
-
-        }
-
-        &::before { content: "Mark"; }
-        &::after { content: "@Mark_Plover"; }
-    }
-    .john {
-        background-image: url("/assets/images/profile-pics/john.jpg");
-        
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/john.jpg")
-
-        }
-
-        &::before { content: "John"; }
-        &::after { content: "@HandsomeJohnP"; font-size: 13px; }
-    }
-    .kepley {
-        background-image: url("/assets/images/profile-pics/kepley.jpg");
-        
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/kepley.jpg")
-
-        }
-
-        &::before { content: "Kepley"; }
-        &::after { content: "@TumbleweeTV"; }
-    }
-    .xphobia {
-        background-image: url("/assets/images/profile-pics/xphobia.png");
-        
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/xphobia.png")
-
-        }
-
-        &::before { content: "Xphobia"; }
-        &::after { content: "@Xphobia"; }
-    }
-    .sean {
-        background-image: url("/assets/images/profile-pics/sean.jpg");
-        
-        &:hover {
-            background: 
-                linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-                url("/assets/images/profile-pics/sean.jpg")
-
-        }
-
-        &::before { content: "Sean"; }
-        &::after { content: "@Oddisey"; }
-    }
-
 }

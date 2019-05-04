@@ -12,6 +12,7 @@ import { AngularFontAwesomeModule } from "angular-font-awesome";
 import { NewsReelComponent } from "./header/news-reel/news-reel.component";
 import { NewsItemComponent } from "./header/news-reel/news-item/news-item.component";
 import { BioModalComponent } from './home/bio-modal/bio-modal.component';
+import { BioWidgetComponent } from './home/bio-widget/bio-widget.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { BioModalComponent } from './home/bio-modal/bio-modal.component';
         FooterComponent,
         NewsReelComponent,
         NewsItemComponent,
-        BioModalComponent
+        BioModalComponent,
+        BioWidgetComponent
     ],
     imports: [
         BrowserModule,

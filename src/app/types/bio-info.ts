@@ -1,5 +1,6 @@
 export interface BioInfo {
     name: string,
     bio: string,
-    imagePath: string
+    imagePath: string,
+    handle: string
 }

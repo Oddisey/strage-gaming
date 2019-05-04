@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import { BioInfo } from 'src/app/types/bio-info';
 
 @Component({
     selector: "app-bio-modal",
@@ -7,7 +8,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
     styleUrls: ["./bio-modal.component.scss"]
 })
 export class BioModalComponent implements OnInit {
-    @Input() name: string;
+    @Input() bio: BioInfo;
 
     constructor(private activeModal: NgbActiveModal) { }
 
