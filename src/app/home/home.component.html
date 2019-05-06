@@ -4,7 +4,7 @@
             FEATURED
         </div>
         <section class="row pt-4">
-            <div class="col-4">
+            <div class="col-4 pl-0">
                 <div class="featured">
                     This week on the latest episode of Happy Hour, Mark spills the
                     beans on how he made his first billion. What else is there to hear 
@@ -12,10 +12,8 @@
                     here and watch!
                 </div>
             </div>
-            <div class="img-container featured col-8">
-                <div class="overlay"></div>
-                <button class="btn primary overlay-btn">Watch</button>
-                <img class="w-100" src="/assets/gifs/testing.gif" alt="">
+            <div class="featured col-8 pr-0">
+                <iframe src="https://www.youtube.com/embed/ll6Zk1daq_E?mute=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </article>
@@ -68,17 +66,17 @@
         </section>
         <section class="photos">
             <div class="row pt-4">
-                <bio-widget class="col-4" [bio]="bios[0]"></bio-widget>
+                <bio-widget class="col-4 pl-0" [bio]="bios[0]"></bio-widget>
                 <bio-widget class="col-4" [bio]="bios[1]"></bio-widget>
-                <bio-widget class="col-4" [bio]="bios[2]"></bio-widget>
+                <bio-widget class="col-4 pr-0" [bio]="bios[2]"></bio-widget>
             </div>
             <div class="row pt-6">
-                <bio-widget class="col-4" [bio]="bios[3]"></bio-widget>
+                <bio-widget class="col-4 pl-0" [bio]="bios[3]"></bio-widget>
                 <bio-widget class="col-4" [bio]="bios[4]"></bio-widget>
-                <bio-widget class="col-4" [bio]="bios[5]"></bio-widget>
+                <bio-widget class="col-4 pr-0" [bio]="bios[5]"></bio-widget>
             </div>
             <div class="row pt-6">
-                <bio-widget class="col-4" [bio]="bios[6]"></bio-widget>
+                <bio-widget class="col-4 pl-0" [bio]="bios[6]"></bio-widget>
                 <bio-widget class="col-4" [bio]="bios[7]"></bio-widget>
             </div>
         </section>
